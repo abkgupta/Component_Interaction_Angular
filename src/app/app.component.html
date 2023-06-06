@@ -1,0 +1,8 @@
+<!-- <app-child [item]="Currentdetail"></app-child> -->
+
+<app-child (newItemEvent)="addItem($event)">
+ 
+</app-child>
+<ul>
+  <li *ngFor="let item of items">{{item}}</li>
+</ul> 
